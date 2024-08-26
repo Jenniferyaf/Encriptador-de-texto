@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+    background-color: rgba(199, 164, 232, 0.676);
+    padding: 40px;
+    font-family: "Rubik";
+}
+
+.header {
+padding: 40px;
+    border: 10px;
+    font-family: "Rubik";
+}
+
+.logoalura {
+    height: 50px;
+}
+
+.content {
+    padding: 0px 20px 20px 40px; 
+    display: flex;           
+    justify-content: space-between;
+    align-items: flex-start; 
+    gap: 20px;
+    font-family: "Rubik";
+
+}
+
+#input-text {
+    height: 900px;
+    width: 400px;
+    border: none;
+    border-radius: 12px;
+    resize: none;
+    outline: none;
+    text-align: left;
+    background-color: transparent ;
+    font-family: "Rubik";
+    font-size: 18px;
+    margin-top: 10px;
+
+}
+
+.output {
+
+    height: 900px;
+    width: 400px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    background-color: white;
+    text-align: center;
+    font-family: "Rubik";
+
+}
+
+#output {
+    margin-bottom: 20px
+}
+
+#copy-btn {
+    height: 60px;
+    width: 300px;
+    border-radius: 24px;
+    margin-top: 750px;
+    cursor: pointer;
+    border-color: rgb(114, 35, 188);
+    background-color: rgba(199, 164, 232, 0.676);
+    font-family: "Rubik";
+}
+
+#copy-btn:hover {
+
+    background-color: rgb(114, 35, 188);
+    color: white;
+
+}
+#encrypt-btn {
+    height: 60px;
+    width: 300px;
+    border-radius: 24px;
+    cursor: pointer;
+    font-family: "Rubik";
+}
+
+#encrypt-btn:hover {
+
+    background-color:rgb(114, 35, 188);
+    color: white;
+}
+#decrypt-btn {
+    height: 60px;
+    width: 300px;
+    border-radius: 24px;
+    cursor: pointer;
+    font-family: "Rubik";
+}
+
+#decrypt-btn:hover {
+
+    background-color:rgba(0, 0, 0, 0.05);
+    color: white;
+}
+
+footer {
+text-align: center;
+padding: 30px;
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #input-text,
+    .output {
+        width: 90%;
+        max-width: none;
+    }
+    #copy-btn,
+    #encrypt-btn,
+    #decrypt-btn {
+        width: 90%;
+        max-width: none;
+        height: 50px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    #input-text,
+    .output {
+        height: auto; /* Ajusta la altura para pantallas más pequeñas */
+    }
+
+    #copy-btn,
+    #encrypt-btn,
+    #decrypt-btn {
+        height: 40px; /* Ajusta el tamaño del botón para pantallas pequeñas */
+    }
+}
